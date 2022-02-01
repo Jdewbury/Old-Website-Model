@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+::selection {
+  color: #101010;
+  background: #8262FF;
+}
+</style>
+</style> 
+	<title>Jarett Dewbury</title>
+	<!-- css files -->
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+	<link rel="icon" type="image/x-icon" href="assets/img/weblogo.png">
+	<meta name="author" content="Jarett Dewbury">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		 <!-- Navbar -->
+  		<nav class="nav container void-background has-shadow is-fluid">
+  			<div class="nav-left">
+  				<a href="https://twitter.com/JarettDewbury" target="_blank" class="nav-item">
+  					<span class="icon">
+  						<i class="fa fa-twitter fa-5x"></i>
+  					</span>
+  				</a>
+  				<a href="https://github.com/Jdewbury" target="_blank" class="nav-item">
+  					<span class="icon">
+  						<i class="fa fa-github fa-5x"></i>
+  					</span>
+  				</a>
+  				<a href="https://www.linkedin.com/in/jarett-dewbury/" target="_blank" class="nav-item">
+  					<span class="icon">
+  						<i class="fa fa-linkedin fa-5x"></i>
+  					</span>
+  				</a>
+          			<a href="mailto:jdewbury@uwaterloo.ca" class="nav-item">
+  					<span class="icon">
+  						<i class="fa fa-envelope-o fa-10x"></i>
+  					</span>
+  				</a>
+  			</div>
+
+  			<!-- This "nav-menu" is hidden on mobile -->
+  			<!-- Add the modifier "is-active" to display it on mobile -->
+			<!--a class="navbar-brand abs" href="https://jdewbury.github.io/jarettd.github.io/">Jarett Dewbury</a-->
+			<!--<h1><img class="avatar" src="assets/img/favicon.png.png"></h1>-->
+				<a class = "logo" href = index.html>
+					<img src = "assets/img/weblogo.png" />
+				</a>
+  			<div class="nav-right nav-menu">
+			<a class="nav-item is-tab" href=about.html>About</a>
+			<a class="nav-item is-tab" href=projects.html>Projects</a>
+  			</div>
+
+			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+				<span class="nav-toggle">
+  				<span></span>
+  				<span></span>
+  				<span></span>
+  			</span>
+  		</nav>
+    <section class=""section section-1"" id="Home">
+		<div class="title">
+			<h1>Jarett Dewbury</h1>
+				<br>
+				<br>
+				<br>
+				<div class="text">
+					<p>Aspiring</p>
+					<p>
+					  <span class="word white">Researcher</span>
+					  <span class="word white">Engineer</span>
+					  <span class="word white">Innovator</span>
+					  <span class="word white">Entrepreneur</span>
+					  <span class="word white">Dreamer</span>
+					</p>
+				  </div>
+			</div>
+    </section>	
+
+	<script src="js/main.js"></script>
+	    <!-- Scripts  -->
+		<script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
+		<script src="./assets/scripts/controller.js"></script>
+    <script type="text/javascript">
+      function handleScroll() {
+        var $href = $(this).attr('href');
+        var $anchor = $($href).offset();
+        var $offset = $('nav.nav').height();
+        var $pos = $anchor.top + ($anchor.top === 0) * 30;
+        $('html, body').animate({ scrollTop: $anchor.top });
+        return false;
+      }
+
+      $('div.nav-menu').find('a').click(handleScroll);
+      $('a#arrow-button').click(handleScroll);
+
+      $('div#top').find('a').click(function() {
+        $('html, body').animate({ scrollTop: 0 });
+        return false;
+      });
+    </script>
+	</body>	
+</html>
