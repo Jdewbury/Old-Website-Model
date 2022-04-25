@@ -7,3 +7,8 @@ Front Page:
 <br>
 About Section:
 <img src="Old_Web2.png">
+<br><br>
+Here is my second iteration built from scratch
+<img src="W1.png"><br>
+<img src="W2.png"><br>
+<img src="W3.png"><br>
