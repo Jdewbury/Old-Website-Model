@@ -4,14 +4,15 @@
 <style>
 
 ::selection {
-  color: #101010;
-  background: #8262FF;
+  color: #8262FF;
+  background: #32373b;
 }
 </style>
 </style> 
 	<title>Jarett Dewbury</title>
+
 	<!-- css files -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Fira Code' rel='stylesheet'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
@@ -19,93 +20,205 @@
 	<link rel="icon" type="image/x-icon" href="assets/img/weblogo.png">
 	<meta name="author" content="Jarett Dewbury">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 	<body>
-		 <!-- Navbar -->
-  		<nav class="nav container void-background has-shadow is-fluid">
-  			<div class="nav-left">
-  				<a href="https://twitter.com/JarettDewbury" target="_blank" class="nav-item">
-  					<span class="icon">
-  						<i class="fa fa-twitter fa-5x"></i>
-  					</span>
-  				</a>
-  				<a href="https://github.com/Jdewbury" target="_blank" class="nav-item">
-  					<span class="icon">
-  						<i class="fa fa-github fa-5x"></i>
-  					</span>
-  				</a>
-  				<a href="https://www.linkedin.com/in/jarett-dewbury/" target="_blank" class="nav-item">
-  					<span class="icon">
-  						<i class="fa fa-linkedin fa-5x"></i>
-  					</span>
-  				</a>
-          			<a href="mailto:jdewbury@uwaterloo.ca" class="nav-item">
-  					<span class="icon">
-  						<i class="fa fa-envelope-o fa-10x"></i>
-  					</span>
-  				</a>
-  			</div>
 
-  			<!-- This "nav-menu" is hidden on mobile -->
-  			<!-- Add the modifier "is-active" to display it on mobile -->
-			<!--a class="navbar-brand abs" href="https://jdewbury.github.io/jarettd.github.io/">Jarett Dewbury</a-->
-			<!--<h1><img class="avatar" src="assets/img/favicon.png.png"></h1>-->
-				<a class = "logo" href = index.html>
-					<img src = "assets/img/weblogo.png" />
-				</a>
-  			<div class="nav-right nav-menu">
-			<a class="nav-item is-tab" href=about.html>About</a>
-			<a class="nav-item is-tab" href=projects.html>Projects</a>
-  			</div>
+	<div class="topnav" id="myTopnav">
+		<ol><img class="logo" src="assets/img/weblogo.png" ></ol>
+		<ol><a href="#projects" class="effect-underline"><b>〈 </b> Projects <b> 〉</b></a></ol>
+		<ol><a href="#experience" class="effect-underline"><b>〈 </b> Experience <b> 〉</b></a></ol>
+		<ol><a href="#about" class="effect-underline"><b>〈 </b> About <b> 〉</b></a></ol>
+		<ol><a href="#home" class="effect-underline"><b>〈 </b> Home <b> 〉</b></a></ol>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-align-justify" aria-hidden="true"></i>
+		</a>
+	</div>
 
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-				<span class="nav-toggle">
-  				<span></span>
-  				<span></span>
-  				<span></span>
-  			</span>
-  		</nav>
-    <section class=""section section-1"" id="Home">
-		<div class="title">
+	<!-- Side Navigation Bar -->
+	<div class="sidenav">
+		<b>
+		<a href="https://www.linkedin.com/in/jarett-dewbury/" target="_blank" class="nav-item">
+			<span class="icon">
+				<i class="fa fa-linkedin" style="font-size:24px"></i>
+			</span>
+		</a>
+		<a href="https://twitter.com/JarettDewbury" target="_blank" class="nav-item">
+			<span class="icon">
+				<i class="fa fa-twitter" style="font-size:24px"></i>
+			</span>
+		</a>
+		<a href="https://github.com/Jdewbury" target="_blank" class="nav-item">
+			<span class="icon">
+				<i class="fa fa-github" style="font-size:24px"></i>
+			</span>
+		</a>
+
+		<!--X
+			<a href="mailto:jdewbury@uwaterloo.ca" class="nav-item">
+			<span class="icon">
+				<i class="fa fa-envelope-o fa-10x"></i>
+			</span>
+		</a>
+		-->
+		<a href="https://codepen.io/jdewbury" class="nav-item">
+		<span class="icon">
+			<i class="fa fa-codepen" style="font-size:24px"></i>
+		</span>
+		</a>
+		<br>
+		<div class="vl"></div>
+	</div>
+
+
+	<!-- Home Section -->
+	<section class="section" id="home">
 			<h1>Jarett Dewbury</h1>
 				<br>
 				<br>
 				<br>
 				<div class="text">
-					<p>Aspiring</p>
-					<p>
-					  <span class="word white">Researcher</span>
-					  <span class="word white">Engineer</span>
-					  <span class="word white">Innovator</span>
-					  <span class="word white">Entrepreneur</span>
-					  <span class="word white">Dreamer</span>
-					</p>
-				  </div>
+					<c>&ensp;Aspiring </c>&nbsp;&ensp;
+					<c>
+						<span class="word darkgrey">Researcher </span>
+						<span class="word darkgrey">Engineer</span>
+						<span class="word darkgrey">Innovator</span>
+						<span class="word darkgrey">Entrepreneur</span>
+						<span class="word darkgrey">Developer</span>
+						
+					</c>
+				</div>
+	</section>	
+	
+	<!-- About Section -->	
+	<section class="section" id="about"><br><br><br><br><br>
+		<c class="sectiontitle lightpurp">About</c><hr class="hl purple"><br>
+		<img class="avatar" src="assets/img/myavatar.png">
+			<div class = "abouttext">
+				I'm an aspiring developer and researcher looking to share my passions with those around me. I am 
+				a <a href="https://uwaterloo.ca/future-students/programs/biomedical-engineering" target="_blank">Biomedical Engineering</a> undergraduate at the University of Waterloo, where I am pursuing specialization in Artificial Intelligence and Neural Engineering. <br /><br />
+				I am currently looking to explore a variety of topics such as human computer interaction, deep learning, 
+				artificial intelligence, 
+				neural engineering, software engineering, and research exploring the intersection of these fields! <br /><br />
+				Outside of academia, my passions focus around <a href="https://www.eliteprospects.com/player/582668/jarrett-dewbury" target="_blank">ice hockey</a>, bike rides, and all things food.<br>
+				<br><br>
 			</div>
-    </section>	
+	</section>	
 
-	<script src="js/main.js"></script>
-	    <!-- Scripts  -->
-		<script type="text/javascript" src="./assets/scripts/jquery-3.2.1.min.js"></script>
-		<script src="./assets/scripts/controller.js"></script>
-    <script type="text/javascript">
-      function handleScroll() {
-        var $href = $(this).attr('href');
-        var $anchor = $($href).offset();
-        var $offset = $('nav.nav').height();
-        var $pos = $anchor.top + ($anchor.top === 0) * 30;
-        $('html, body').animate({ scrollTop: $anchor.top });
-        return false;
-      }
 
-      $('div.nav-menu').find('a').click(handleScroll);
-      $('a#arrow-button').click(handleScroll);
+	<!-- Experience Section -->	
+	<section class="section" id="experience"><br><br><br>
+		<c class="sectiontitle lightpurp"> Experience</c><hr class="hl purple"><br><br><br><br>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'WATOLINK')" id="defaultOpen">WATOLINK</button>
+			<button class="tablinks" onclick="openCity(event, 'Waterloop')">Waterloop</button>
+			<button class="tablinks" onclick="openCity(event, 'Math2²Everyone')">Math2²Everyone</button>
+			  </div>
+		  
+		  <div id="WATOLINK" class="tabcontent">
+			<a class="exptitle lightpurp" href="https://teamwaterloop.ca/" target="_blank">WATOLINK</a><br>
+			<p class="exprole purple">Biosignal Research Lead</p>
+			<p class="expdate darkgrey">OCTOBER 2021 - Present</p>
+			<p class="expdate darkgrey">Waterloo, ON</p><br><br>
+			<p class="expdesc lightpurp">
+			Watolink is a Neuroengineering Design Team focused on developing a brain-computer interface (BCI) model to translate EEG signals into specific user commands.
+			As a member of the Biosignal Research Team, I have had the opportunity to explore and analyze the most optimal stimuli characteristics for effective signal detection. 
+			I cannot provide more specifics for now, as we will be competing in the NeuroTechX2022 Competition.
+			</p>
+		  </div>
+		  
+		  <div id="Waterloop" class="tabcontent">
+			<a class="exptitle lightpurp" href="https://www.watolink.com/" target="_blank">Waterloop</a><br>
+			<p class="exprole purple">Propulsion Team</p>
+			<p class="expdate darkgrey">SEPTEMBER 2021 - Present</p>
+			<p class="expdate darkgrey">Waterloo, ON</p><br><br>
+			<p class="expdesc lightpurp">
+			Waterloop is a hyperloop design team formed as a response to the 'SpaceX Hyperloop Pod Challenge'. As a member of the Propulsion Team, I had the opportunity to explore the 
+			possibility of electromagnetic levitation within the hyperloop pod, through the utilization of a linear induction motor (LIM). I also had the opportunity to analyze and repair
+			the LIM coil configuration, as well as hand-repair physical components of the motor. 
+			</p>
+		  </div>
+		  
+		  <div id="Math2²Everyone" class="tabcontent">
+			<a class="exptitle lightpurp" href="https://www.linkedin.com/company/math2%C2%B2everyone/?viewAsMember=true" target="_blank">Math2²Everyone</a><br>
+			<p class="exprole purple">Founder</p>
+			<p class="expdate darkgrey">SEPTEMBER 2018 - JUNE 2021</p>
+			<p class="expdate darkgrey">London, ON</p><br><br>
+			<p class="expdesc lightpurp">
+			Math2²Everyone was a self-started company with the intent to remove any barriers with learning and receiving necessary support in various levels of mathematics.
+			I had the opportunity to support over 15 highschool and university students in their prospective mathematics courses on a weekly basis, assessing academic performance
+			and developing personalized learning models all free of charge. 
+			</p>
+		  </div>
+		</div>
+	</div>
+	<!--
+	<p class="contactme purple">I am always open to new and challenging opportunities! If you have something in mind or would like to chat, please <a href="mailto:jdewbury@uwaterloo.ca" style ="color:#AFA9C7;">contact me</a></p>
+	-->
+	</section>	
 
-      $('div#top').find('a').click(function() {
-        $('html, body').animate({ scrollTop: 0 });
-        return false;
-      });
-    </script>
-	</body>	
+	<!-- Project Section -->	
+	<section class="section" id="projects"><br><br><br>
+		<c class="sectiontitle lightpurp"> Projects</c><hr class="hl purple"><br><br><br><br>
+		<p class="exprole darkgrey">Stay tuned for projects! For now, you can check out my projects <a href="https://github.com/Jdewbury" style ="color:#AFA9C7;">here</a></p>
+	</section>	
+
+	<!-- Final Section -->
+	<section class="sectionfinal purple">
+		<br><br><br>
+		Designed & Developed by Jarett Dewbury<br>
+		Copyright © 2022
+		</section>
+
+
+
+<script src="js/main.js"></script>
+<script src="js/controller.js"></script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script>
+	// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+		document.getElementById("myTopnav").style.padding = "0px 10px";
+	  } else {
+		document.getElementById("myTopnav").style.padding = "15px 10px";
+	  }
+	}
+</script>
+
+<script>
+	function openCity(evt, cityName) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablinks");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	  }
+	  document.getElementById(cityName).style.display = "block";
+	  evt.currentTarget.className += " active";
+	}
+	
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
+
+
+
+</body>
 </html>
